@@ -9,6 +9,7 @@ namespace Homework2
     class Recursive
     {
 		//тут все стандартно, просто добавил сообщение об окончании вывода
+
 		static void WriteAllNumbers(int a, int b)
 		{
 		    Console.WriteLine("{0} ", a);
