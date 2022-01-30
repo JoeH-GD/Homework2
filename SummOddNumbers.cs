@@ -10,6 +10,8 @@ namespace Homework2
     {
         static void Main(string[] args)
         {
+            Console.Title = "SummOddNumbers";
+            Console.WriteLine("Халдон. С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.\n");
             int summ = 0;
             int x = 0;
 

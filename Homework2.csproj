@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Homework2.Recursive</StartupObject>
+    <StartupObject>Homework2.Autorization</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
