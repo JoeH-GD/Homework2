@@ -9,6 +9,7 @@ namespace Homework2
     class Recursive
     {
 		//тут все стандартно, просто добавил сообщение об окончании вывода
+
 		static void WriteAllNumbers(int a, int b)
 		{
 		    Console.WriteLine("{0} ", a);
@@ -30,13 +31,17 @@ namespace Homework2
 
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Enter first number");
+			Console.WriteLine("Халдон. Разработать рекурсивный метод, который выводит на экран числа от a до b(a<b).\n" +
+				"Разработать рекурсивный метод, который считает сумму чисел от a до b.\n");
+
+            #region variables
+            Console.WriteLine("Enter first number");
 			int num1 = int.Parse(Console.ReadLine());
 			Console.WriteLine("Enter second number");
 			int num2 = int.Parse(Console.ReadLine());
+            #endregion variables
 
-
-			WriteAllNumbers(num1, num2);
+            WriteAllNumbers(num1, num2);
 
 			Console.WriteLine("The summ of these numbers is {0}",SummAllNumbers(num1, num2));
 			

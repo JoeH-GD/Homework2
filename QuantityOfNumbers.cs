@@ -23,6 +23,9 @@ namespace Homework2
     
         static void Main(string[] args)
         {
+            Console.Title = "Number of Digets";
+            Console.WriteLine("Халдон. Написать метод подсчета количества цифр числа.\n");
+
             Console.WriteLine("Enter a number");
          
         //В условии не сказано, обязательно ли входящее число должно быть положительным

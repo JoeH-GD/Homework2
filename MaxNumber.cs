@@ -21,13 +21,15 @@ namespace Homework2
 
             Console.WriteLine("Haldon. Find maximum out of three numbers");
             Console.WriteLine("========================================");
-
+          
+            #region EnterVariables
             Console.WriteLine("Enter the first number:");
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number:");
             int num2 = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the third number:");
             int num3 = int.Parse(Console.ReadLine());
+            #endregion EnterVariables
 
             MaxOfThree(num1, num2, num3);
 
