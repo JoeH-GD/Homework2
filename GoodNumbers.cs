@@ -33,15 +33,16 @@ namespace Homework2
             //Переменную суммы создаем в теле цикла, за его пределами она нам не нужна, бережем память
             int sum = 0;
 
-            int numberCheck = i;
-
-            while (numberCheck > 0 )
+                #region GoodNumber
+                int numberCheck = i;
+                while (numberCheck > 0 )
                 {
                    sum = sum + (numberCheck % 10);
                    numberCheck = numberCheck / 10;
                 }
+                #endregion GoodNumber
 
-            //Проверяем, является ли число хорошим
+                //Проверяем, является ли число хорошим
                 if (i%sum == 0)
                 {
                     counter++;

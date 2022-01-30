@@ -19,6 +19,7 @@ namespace Homework2
             double weightIndexNormMax = 25;
             double weightIndexNormMin = 18.5;
 
+            #region Math
             double weightIndex = currentWeight / Math.Pow(currentHeight, 2);
 
             //Сколько килограмм сбросить
@@ -26,7 +27,9 @@ namespace Homework2
 
             //Сколько килограмм набрать
             double kgToGain = (weightIndexNormMin * Math.Pow(currentHeight, 2)) - currentWeight;
+            #endregion Math
 
+            #region recommend
             //Учитывая, что в развитых странах проблема ожирения актуальна проверку нужно начинать с избыточной массы. 
             //С вероятностью примерно 50% дальнейшие вычисления не понадобятся
             //Экономим ресурсы
@@ -45,6 +48,7 @@ namespace Homework2
                 {
                 Console.WriteLine("Your weight index is {0:F1}. You are perfect!", weightIndex);
             }
+            #endregion recommend
         }
 
         static void Main(string[] args)

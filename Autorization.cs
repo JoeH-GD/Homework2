@@ -13,21 +13,28 @@ namespace Homework2
         //Но мне хотелось решить задачу самостоятельно, как я бы ее решал с тем багажом, который у меня есть
         static bool Authorisation(string login, string password)
         {
+            #region variables
             // Ставим не авторизован по умолчанию, во избежание случайного входа в систему без ввода логина и пароля
             bool authorised = false;
             string loginCorrect = "root";
             string passwordCorrect = "GeekBrains";
+            #endregion variables
             
-           //Метод Compare возвращает целочисленные значения от -1 до 1. Запишем их в переменные
-           int logginCheck = string.Compare(loginCorrect, login);
+            #region checkString
+            //Метод Compare возвращает целочисленные значения от -1 до 1. Запишем их в переменные
+            int logginCheck = string.Compare(loginCorrect, login);
            int passwordCheck = string.Compare(passwordCorrect, password);
+            #endregion checkString
 
+            #region success
             //Если обе строки совпали с заданными - авторизуем пользователя
             if (logginCheck == 0 && passwordCheck == 0)
             {
                 authorised = true;
             }
+            #endregion success
 
+            #region fail
             //Это можно было не делать, поскольку переменная сохранит значение false 
             // Но так просто удобнее для пользователя
             else
@@ -36,6 +43,7 @@ namespace Homework2
 
                 Console.ReadLine();
             }
+            #endregion fail
 
             // Просто чтобы было красивее
             Console.Clear();
